@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
@@ -8,14 +8,14 @@ const Navbar = () => {
         style={{ backgroundColor: "#FFF" }}
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img
               src="/media/logo.svg"
               alt="logo.svg"
               style={{ width: "30%" }}
               className="mx-5"
             />
-          </a>
+          </Link>
           <button
             class="navbar-toggler "
             type="button"
@@ -30,29 +30,29 @@ const Navbar = () => {
           <form action="" className="m-2" >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item" className="mx-2">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/signup">
                   SignUp
-                </a>
+                </Link>
               </li>
               <li class="nav-item" className="mx-3">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item" className="mx-3">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/product">
                   Product
-                </a>
+                </Link>
               </li>
               <li class="nav-item" className="mx-3">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/rice">
                   Price
-                </a>
+                </Link>
               </li>
               <li class="nav-item" className="mx-3">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="#">
                   <i class="fa-solid fa-bars"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </form>

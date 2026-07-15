@@ -1,14 +1,10 @@
 import React from 'react'
-import Navbar from "../common/Navbar"
-import Footer from "../common/Footer"
 import RaiseTicket from './RaiseTicket'
 const SupportPage = () => {
   return (
     <div>
-        <Navbar/>
         <Hero/>
         <RaiseTicket/>
-        <Footer/>
     </div>
   )
 }
