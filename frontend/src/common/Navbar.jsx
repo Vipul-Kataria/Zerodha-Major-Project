@@ -50,6 +50,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li class="nav-item" className="mx-3">
+                <Link class="nav-link" to="/support">
+                  Support
+                </Link>
+              </li>
+              <li class="nav-item" className="mx-3">
                 <Link class="nav-link" to="#">
                   <i class="fa-solid fa-bars"></i>
                 </Link>
